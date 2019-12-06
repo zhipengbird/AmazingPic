@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "6E9D8D3B-B16B-457C-BFB7-EB5215E2A06D"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C13C5309-98BE-4975-B71F-8FBDFE1D127A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AmazingPicTests/AmazingPicTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "testExample()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "07C8DE26-6BF9-42E9-8473-30A1C01689E2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AmazingPic/Operation/splashPageRequest.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "prepareParamters()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FBD62A11-2D32-431F-AD5D-6791D0473FE9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AmazingPic/Operation/CollectionPhotosRequest.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "processResponseData(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FBD62A11-2D32-431F-AD5D-6791D0473FE9 - a4b5b5bf8d9a1721"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AmazingPic.CollectionPhotosRequest.processResponseData(Swift.Optional&lt;Foundation.Data&gt;) -&gt; ()"
+                  moduleName = "AmazingPic"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yuanpinghua/%E5%BC%80%E5%8F%91%E7%94%A8%E4%BE%8B/Swift/AmazingPic/AmazingPic/Operation/CollectionPhotosRequest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "134">
+               </Location>
+               <Location
+                  uuid = "FBD62A11-2D32-431F-AD5D-6791D0473FE9 - bc87150cb3f1915d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AmazingPicTests.CollectionPhotosRequest.processResponseData(Swift.Optional&lt;Foundation.Data&gt;) -&gt; ()"
+                  moduleName = "AmazingPicTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yuanpinghua/%E5%BC%80%E5%8F%91%E7%94%A8%E4%BE%8B/Swift/AmazingPic/AmazingPic/Operation/CollectionPhotosRequest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "134">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DFFC1F47-665A-44BE-B64C-4E0A2E32EE67"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AmazingPic/Operation/SplashRequest.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "prepareHeaders()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DFFC1F47-665A-44BE-B64C-4E0A2E32EE67 - c245d2a140db9fd0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AmazingPic.SplashRequest.prepareHeaders() -&gt; Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Swift.String&gt;&gt;"
+                  moduleName = "AmazingPic"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yuanpinghua/%E5%BC%80%E5%8F%91%E7%94%A8%E4%BE%8B/Swift/AmazingPic/AmazingPic/Operation/SplashRequest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "670">
+               </Location>
+               <Location
+                  uuid = "DFFC1F47-665A-44BE-B64C-4E0A2E32EE67 - e5a205a10360de1f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AmazingPicTests.SplashRequest.prepareHeaders() -&gt; Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Swift.String&gt;&gt;"
+                  moduleName = "AmazingPicTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yuanpinghua/%E5%BC%80%E5%8F%91%E7%94%A8%E4%BE%8B/Swift/AmazingPic/AmazingPic/Operation/SplashRequest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "670">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D470402C-1A45-4C10-9DCA-701FEFECE4E7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AmazingPic/Operation/NetworkRequest.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
+            landmarkName = "main()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D470402C-1A45-4C10-9DCA-701FEFECE4E7 - d1bbd1796285c189"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AmazingPic.NetworkRequest.main() -&gt; ()"
+                  moduleName = "AmazingPic"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yuanpinghua/%E5%BC%80%E5%8F%91%E7%94%A8%E4%BE%8B/Swift/AmazingPic/AmazingPic/Operation/NetworkRequest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "113"
+                  endingLineNumber = "113"
+                  offsetFromSymbolStart = "452">
+               </Location>
+               <Location
+                  uuid = "D470402C-1A45-4C10-9DCA-701FEFECE4E7 - d5b8eae4ada87c89"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AmazingPicTests.NetworkRequest.main() -&gt; ()"
+                  moduleName = "AmazingPicTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yuanpinghua/%E5%BC%80%E5%8F%91%E7%94%A8%E4%BE%8B/Swift/AmazingPic/AmazingPic/Operation/NetworkRequest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "113"
+                  endingLineNumber = "113"
+                  offsetFromSymbolStart = "452">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

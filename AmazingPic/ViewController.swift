@@ -12,6 +12,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let request  = CollectionPhotosRequest(for: "12", page: 1, perpage: 10)
+        request.completionBlock = {
+        }
+        request.start()
         // Do any additional setup after loading the view.
     }
 
