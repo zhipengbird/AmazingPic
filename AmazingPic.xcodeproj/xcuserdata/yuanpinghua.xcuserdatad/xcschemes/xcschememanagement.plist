@@ -7,7 +7,35 @@
 		<key>AmazingPic.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>AmazingPicTests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>AmazingPicUITests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>0AD17C9523963B5600368E54</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0AD17CAB23963B5900368E54</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0AD17CB623963B5900368E54</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

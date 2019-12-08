@@ -19,12 +19,9 @@ class CollectionPhotosRequest: SplashPageRequest {
     }
     private let collectionId: String
     override init(with cursor: Cursor) {
-        if let parameters = cursor.parameters {
-            if let collectionId = parameters["id"] as? String {
+        if let parameters = cursor.parameters,
+            let collectionId = parameters["id"] as? String {
                 self.collectionId = collectionId
-            }else {
-                self.collectionId = ""
-            }
         } else {
             self.collectionId = ""   
         }
@@ -41,28 +38,23 @@ class CollectionPhotosRequest: SplashPageRequest {
     }
     
     override func processResponseData(_ data: Data?) {
-        if let data = data {
-            do {
-                let result = try? JSONSerialization.jsonObject(with: data, options: [])
-                print(result)          
-                completeOperation()
-            } catch  {
-                self.error = error
-            }
-          
+        if let photos   = photosFromResponseData(data) {
+            self.items = photos
+            print(items)
+            completeOperation()
         }
         super.processResponseData(data)
     }
-//    func photosFromResponseData(_ data: Data?) -> [Any]? {
-//        guard let data = data else {
-//            return nil 
-//        }
-//        do {
-////            return try  JSONDecoder().decode([].self, from: data)
-//        } catch  {
-//            self.error = error
-//            return nil
-//        }
-//    }
+    func photosFromResponseData(_ data: Data?) -> [SplashPhoto]? {
+        guard let data = data else {
+            return nil
+        }
+        do {
+            return try  JSONDecoder().decode([SplashPhoto].self, from: data)
+        } catch  {
+            self.error = error
+            return nil
+        }
+    }
     
 }

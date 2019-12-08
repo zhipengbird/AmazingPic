@@ -26,7 +26,8 @@ class AmazingPicTests: XCTestCase {
     
 //        Configuration.shared = UnsplashPhotoConfiguration(accessKey: "b2f4e2589e116c4b9fb0560f402a8120ef55bedf3b13fffd621fc10eade48155", secretkey: "e586f8df794684789065ddf077de58d32c52c78e6b9f069064271360bf52dfda", query: "", allowMultipleSelection: false , memoryCapacity: 100, diskCapacity: 100)
 //        
-       let request  = CollectionPhotosRequest(for: "12", page: 1, perpage: 10)
+//       let request  = CollectionPhotosRequest(for: "12", page: 1, perpage: 10)
+        let request = SearchPhotoRequest(with: "flow", page:1, perpage: 10)
         request.completionBlock = {
             except.fulfill()
         }

@@ -14,8 +14,8 @@
             filePath = "AmazingPicTests/AmazingPicTests.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
             landmarkName = "testExample()"
             landmarkType = "7">
          </BreakpointContent>
@@ -23,161 +23,113 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "07C8DE26-6BF9-42E9-8473-30A1C01689E2"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AmazingPic/Operation/splashPageRequest.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "prepareParamters()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "FBD62A11-2D32-431F-AD5D-6791D0473FE9"
+            uuid = "DB9DB6CC-03EA-4BA9-BDE4-E48095D78A88"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AmazingPic/Operation/CollectionPhotosRequest.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
             landmarkName = "processResponseData(_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "FBD62A11-2D32-431F-AD5D-6791D0473FE9 - a4b5b5bf8d9a1721"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "AmazingPic.CollectionPhotosRequest.processResponseData(Swift.Optional&lt;Foundation.Data&gt;) -&gt; ()"
-                  moduleName = "AmazingPic"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yuanpinghua/%E5%BC%80%E5%8F%91%E7%94%A8%E4%BE%8B/Swift/AmazingPic/AmazingPic/Operation/CollectionPhotosRequest.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "44"
-                  endingLineNumber = "44"
-                  offsetFromSymbolStart = "134">
-               </Location>
-               <Location
-                  uuid = "FBD62A11-2D32-431F-AD5D-6791D0473FE9 - bc87150cb3f1915d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "AmazingPicTests.CollectionPhotosRequest.processResponseData(Swift.Optional&lt;Foundation.Data&gt;) -&gt; ()"
-                  moduleName = "AmazingPicTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yuanpinghua/%E5%BC%80%E5%8F%91%E7%94%A8%E4%BE%8B/Swift/AmazingPic/AmazingPic/Operation/CollectionPhotosRequest.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "44"
-                  endingLineNumber = "44"
-                  offsetFromSymbolStart = "134">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "DFFC1F47-665A-44BE-B64C-4E0A2E32EE67"
+            uuid = "5C259EA4-FC62-41F6-9A7D-7169CF6152CB"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AmazingPic/Operation/SplashRequest.swift"
+            filePath = "AmazingPic/Operation/CollectionPhotosRequest.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "prepareHeaders()"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "processResponseData(_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "DFFC1F47-665A-44BE-B64C-4E0A2E32EE67 - c245d2a140db9fd0"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "AmazingPic.SplashRequest.prepareHeaders() -&gt; Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Swift.String&gt;&gt;"
-                  moduleName = "AmazingPic"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yuanpinghua/%E5%BC%80%E5%8F%91%E7%94%A8%E4%BE%8B/Swift/AmazingPic/AmazingPic/Operation/SplashRequest.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "37"
-                  endingLineNumber = "37"
-                  offsetFromSymbolStart = "670">
-               </Location>
-               <Location
-                  uuid = "DFFC1F47-665A-44BE-B64C-4E0A2E32EE67 - e5a205a10360de1f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "AmazingPicTests.SplashRequest.prepareHeaders() -&gt; Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Swift.String&gt;&gt;"
-                  moduleName = "AmazingPicTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yuanpinghua/%E5%BC%80%E5%8F%91%E7%94%A8%E4%BE%8B/Swift/AmazingPic/AmazingPic/Operation/SplashRequest.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "37"
-                  endingLineNumber = "37"
-                  offsetFromSymbolStart = "670">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "D470402C-1A45-4C10-9DCA-701FEFECE4E7"
+            uuid = "75231810-A83E-4C7D-8219-B495E4B885D8"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AmazingPic/Operation/NetworkRequest.swift"
+            filePath = "AmazingPic/Operation/CollectionPhotosRequest.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "113"
-            endingLineNumber = "113"
-            landmarkName = "main()"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "photosFromResponseData(_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "D470402C-1A45-4C10-9DCA-701FEFECE4E7 - d1bbd1796285c189"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "AmazingPic.NetworkRequest.main() -&gt; ()"
-                  moduleName = "AmazingPic"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yuanpinghua/%E5%BC%80%E5%8F%91%E7%94%A8%E4%BE%8B/Swift/AmazingPic/AmazingPic/Operation/NetworkRequest.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "113"
-                  endingLineNumber = "113"
-                  offsetFromSymbolStart = "452">
-               </Location>
-               <Location
-                  uuid = "D470402C-1A45-4C10-9DCA-701FEFECE4E7 - d5b8eae4ada87c89"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "AmazingPicTests.NetworkRequest.main() -&gt; ()"
-                  moduleName = "AmazingPicTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yuanpinghua/%E5%BC%80%E5%8F%91%E7%94%A8%E4%BE%8B/Swift/AmazingPic/AmazingPic/Operation/NetworkRequest.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "113"
-                  endingLineNumber = "113"
-                  offsetFromSymbolStart = "452">
-               </Location>
-            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "03AC2D86-5048-40E3-BFAF-0A2C286A6A8A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AmazingPic/Operation/SearchPhotoRequest.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "processJsonResponse()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EFCA6A42-BAFD-4C88-90AF-9C33A46E81A1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AmazingPic/Operation/SearchPhotoRequest.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "photosFromResponseData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F902F887-AF63-43EA-A66D-80782045C84E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AmazingPicTests/AmazingPicTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "testExample()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7E7F1B0A-E3E2-4E8E-A5E3-11F9458208FA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AmazingPic/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

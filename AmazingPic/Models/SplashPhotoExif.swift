@@ -8,15 +8,15 @@
 
 import UIKit
 
-struct SplashPhotoExif: Codable {
+public struct SplashPhotoExif: Codable {
     public let aperture: String
     public let exposureTime: String
     public let focalLength: String
     public let iso: String
     public let make: String
     public let model: String
-    
-    enum CodingKeys: String, CodingKey {
+
+    private enum CodingKeys: String, CodingKey {
         case aperture
         case exposureTime = "exposure_time"
         case focalLength = "focal_length"

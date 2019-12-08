@@ -45,6 +45,7 @@ class SplashRequest: NetworkRequest {
         
         do {
             jsonResponse =  try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.init(rawValue: 0))
+            processJsonResponse()
         } catch  {
             completeWithError(RequestError.invalidJsonResponse)
         }

@@ -7,8 +7,8 @@
 //
 
 import UIKit
-
-struct SplashUser: Codable {
+ 
+public struct SplashUser: Codable {
 
     public enum ProfileImageSize: String, Codable {
         case small
@@ -86,5 +86,48 @@ struct SplashUser: Codable {
         try container.encode(totalCollections, forKey: .totalCollections)
         try container.encode(totalLikes, forKey: .totalLikes)
         try container.encode(totalPhotos, forKey: .totalPhotos)
+    }
+}
+
+// MARK: - Convenience
+extension SplashUser {
+    var displayName: String {
+        if let name = name {
+            return name
+        }
+
+        if let firstName = firstName {
+            if let lastName = lastName {
+                return "\(firstName) \(lastName)"
+            }
+            return firstName
+        }
+
+        return username
+    }
+
+    var profileURL: URL? {
+        return URL(string: "https://unsplash.com/@\(username)")
+    }
+}
+
+// MARK: - Equatable
+extension SplashUser: Equatable {
+    public static func == (lhs: SplashUser, rhs: SplashUser) -> Bool {
+        return lhs.identifier == rhs.identifier
+    }
+}
+
+extension KeyedDecodingContainer {
+    func decode(_ type: [SplashUser.LinkKind: URL].Type, forKey key: Key) throws -> [SplashUser.LinkKind: URL] {
+        let urlsDictionary = try self.decode([String: String].self, forKey: key)
+        var result = [SplashUser.LinkKind: URL]()
+        for (key, value) in urlsDictionary {
+            if let kind = SplashUser.LinkKind(rawValue: key),
+                let url = URL(string: value) {
+                result[kind] = url
+            }
+        }
+        return result
     }
 }
