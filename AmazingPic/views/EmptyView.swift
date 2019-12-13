@@ -10,13 +10,13 @@ import UIKit
 
 enum EmptyViewState {
     case noResults
-    case noInternetConnect
+    case noInternetConnection
     case serverError
     var title: String {
         switch self {
         case .noResults:
             return NSLocalizedString("error.noResults.title", comment: "")
-        case .noInternetConnect :
+        case .noInternetConnection :
             return NSLocalizedString("error.noInternetConnection.title", comment: "")
         case .serverError:
             return NSLocalizedString("error.serverError.title", comment: "")
@@ -27,7 +27,7 @@ enum EmptyViewState {
             
         case .noResults:
             return NSLocalizedString("error.noResults.description", comment: "")
-        case .noInternetConnect :
+        case .noInternetConnection :
             return NSLocalizedString("error.noInternetConnection.description", comment: "")
         case .serverError:
             return NSLocalizedString("error.serverError.description", comment: "")

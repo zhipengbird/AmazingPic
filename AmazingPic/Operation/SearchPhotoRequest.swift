@@ -21,7 +21,7 @@ class SearchPhotoRequest: SplashPageRequest {
         return "/search/photos"
     }
     override func processJsonResponse() {
-        if let photos  = photosFromResponseData() {
+       if let photos  = photosFromResponseData() {
             self.items = photos
             print(items)
         }

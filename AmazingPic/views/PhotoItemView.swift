@@ -28,7 +28,9 @@ class PhotoItemView: UIView {
         addSubview(imageView)
         addSubview(gradientView)
         addSubview(userNameLabel)
-        
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        gradientView.translatesAutoresizingMaskIntoConstraints = false
+        userNameLabel.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             imageView.leadingAnchor.constraint(equalTo: leadingAnchor),
             imageView.trailingAnchor.constraint(equalTo: trailingAnchor),
@@ -53,7 +55,7 @@ class PhotoItemView: UIView {
         self.userNameLabel.isHidden = !showUserName
         self.userNameLabel.text = photo.user.displayName
         self.imageView.backgroundColor = photo.color
-        
+        downloadImage(with: photo)
     }
     func prepareForReuse()  {
         self.imageView.image = nil

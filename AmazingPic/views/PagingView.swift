@@ -15,10 +15,10 @@ class PagingView: UICollectionReusableView {
     lazy var spinnerView: UIActivityIndicatorView = {
         var pinnerview: UIActivityIndicatorView
         if #available(iOS 13.0, *) {
-            let pinnerview = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.large)
+             pinnerview = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.large)
         } else {
             // Fallback on earlier versions
-            let pinnerview = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.gray)
+          pinnerview = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.gray)
         }
         pinnerview.translatesAutoresizingMaskIntoConstraints = false
         return pinnerview

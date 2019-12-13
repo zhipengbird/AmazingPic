@@ -46,6 +46,9 @@
 		0A1EA926239D0B240022F421 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 0A1EA92A239D0B240022F421 /* Localizable.stringsdict */; };
 		0A1EA927239D0B240022F421 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 0A1EA92A239D0B240022F421 /* Localizable.stringsdict */; };
 		0A1EA928239D0B240022F421 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 0A1EA92A239D0B240022F421 /* Localizable.stringsdict */; };
+		0A8CBB8623A11F5500A1C929 /* SplashTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8CBB8523A11F5500A1C929 /* SplashTabbarViewController.swift */; };
+		0A8CBB8723A11F5500A1C929 /* SplashTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8CBB8523A11F5500A1C929 /* SplashTabbarViewController.swift */; };
+		0A8CBB8823A11F5500A1C929 /* SplashTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8CBB8523A11F5500A1C929 /* SplashTabbarViewController.swift */; };
 		0A8D9DD4239B8CC4008153A8 /* SearchPhotoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8D9DD3239B8CC4008153A8 /* SearchPhotoRequest.swift */; };
 		0A8D9DD5239B8CC4008153A8 /* SearchPhotoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8D9DD3239B8CC4008153A8 /* SearchPhotoRequest.swift */; };
 		0A8D9DD6239B8CC4008153A8 /* SearchPhotoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8D9DD3239B8CC4008153A8 /* SearchPhotoRequest.swift */; };
@@ -88,6 +91,9 @@
 		0A8DB5E92399400100731361 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8DB5E82399400100731361 /* UIColor+Extension.swift */; };
 		0A8DB5EA2399400100731361 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8DB5E82399400100731361 /* UIColor+Extension.swift */; };
 		0A8DB5EB2399400100731361 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8DB5E82399400100731361 /* UIColor+Extension.swift */; };
+		0A8DB625239E71E600731361 /* NSError+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8DB624239E71E600731361 /* NSError+Extension.swift */; };
+		0A8DB626239E71E600731361 /* NSError+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8DB624239E71E600731361 /* NSError+Extension.swift */; };
+		0A8DB627239E71E600731361 /* NSError+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8DB624239E71E600731361 /* NSError+Extension.swift */; };
 		0AD17C9A23963B5600368E54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD17C9923963B5600368E54 /* AppDelegate.swift */; };
 		0AD17C9C23963B5600368E54 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD17C9B23963B5600368E54 /* SceneDelegate.swift */; };
 		0AD17C9E23963B5600368E54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD17C9D23963B5600368E54 /* ViewController.swift */; };
@@ -143,6 +149,7 @@
 		0A1EA918239CE1270022F421 /* SplashPhotoSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPhotoSearchViewController.swift; sourceTree = "<group>"; };
 		0A1EA91E239CE6950022F421 /* SplashController+Collectionview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SplashController+Collectionview.swift"; sourceTree = "<group>"; };
 		0A1EA929239D0B240022F421 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		0A8CBB8523A11F5500A1C929 /* SplashTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashTabbarViewController.swift; sourceTree = "<group>"; };
 		0A8D9DD3239B8CC4008153A8 /* SearchPhotoRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPhotoRequest.swift; sourceTree = "<group>"; };
 		0A8D9DD7239B9903008153A8 /* PageDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageDataSource.swift; sourceTree = "<group>"; };
 		0A8D9DDB239B9B47008153A8 /* PhotosDataSouceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosDataSouceFactory.swift; sourceTree = "<group>"; };
@@ -157,6 +164,7 @@
 		0A8DB5E023993DA200731361 /* Dictionary+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extension.swift"; sourceTree = "<group>"; };
 		0A8DB5E423993F0000731361 /* KeyedDecodingContainer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyedDecodingContainer+Extension.swift"; sourceTree = "<group>"; };
 		0A8DB5E82399400100731361 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		0A8DB624239E71E600731361 /* NSError+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSError+Extension.swift"; sourceTree = "<group>"; };
 		0AD17C9623963B5600368E54 /* AmazingPic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmazingPic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AD17C9923963B5600368E54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AD17C9B23963B5600368E54 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -220,6 +228,7 @@
 			children = (
 				0A1EA918239CE1270022F421 /* SplashPhotoSearchViewController.swift */,
 				0A1EA91E239CE6950022F421 /* SplashController+Collectionview.swift */,
+				0A8CBB8523A11F5500A1C929 /* SplashTabbarViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -305,7 +314,6 @@
 				0A8DB5CC2399270D00731361 /* SplashPageRequest.swift */,
 				0A8DB5D0239928BA00731361 /* CollectionPhotosRequest.swift */,
 				0A8D9DD3239B8CC4008153A8 /* SearchPhotoRequest.swift */,
-				0A1EA8EC239BFF500022F421 /* URL+Extension.swift */,
 			);
 			path = Operation;
 			sourceTree = "<group>";
@@ -318,7 +326,9 @@
 				0A8DB5E82399400100731361 /* UIColor+Extension.swift */,
 				0A8D9DDF239BA27A008153A8 /* OperationQueue+Extension.swift */,
 				0A1EA910239CDC1E0022F421 /* UIColor+Theme.swift */,
+				0A1EA8EC239BFF500022F421 /* URL+Extension.swift */,
 				0A1EA914239CDE410022F421 /* UIFont+Theme.swift */,
+				0A8DB624239E71E600731361 /* NSError+Extension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -496,6 +506,7 @@
 				0AD17C9A23963B5600368E54 /* AppDelegate.swift in Sources */,
 				0A1EA901239CD89A0022F421 /* EmptyView.swift in Sources */,
 				0A8DB5E92399400100731361 /* UIColor+Extension.swift in Sources */,
+				0A8DB625239E71E600731361 /* NSError+Extension.swift in Sources */,
 				0A8DB5D1239928BA00731361 /* CollectionPhotosRequest.swift in Sources */,
 				0A8DB5DD23993B8D00731361 /* SplashUser.swift in Sources */,
 				0AD17C9C23963B5600368E54 /* SceneDelegate.swift in Sources */,
@@ -506,6 +517,7 @@
 				0A1EA8ED239BFF500022F421 /* URL+Extension.swift in Sources */,
 				0A8D9DE0239BA27A008153A8 /* OperationQueue+Extension.swift in Sources */,
 				0A8D9DE4239BDADF008153A8 /* ImageDownloader.swift in Sources */,
+				0A8CBB8623A11F5500A1C929 /* SplashTabbarViewController.swift in Sources */,
 				0A8DB5CD2399270D00731361 /* SplashPageRequest.swift in Sources */,
 				0A8DB5D5239933CC00731361 /* SplashPhotoModel.swift in Sources */,
 				0AD17CDB2397EFB700368E54 /* ImageCache.swift in Sources */,
@@ -520,6 +532,7 @@
 			files = (
 				0A1EA8F6239CAFAE0022F421 /* CheckMarkView.swift in Sources */,
 				0A8DB5DE23993B8D00731361 /* SplashUser.swift in Sources */,
+				0A8CBB8723A11F5500A1C929 /* SplashTabbarViewController.swift in Sources */,
 				0AD17CDC2397EFB700368E54 /* ImageCache.swift in Sources */,
 				0A1EA8E5239BF1F90022F421 /* GradientView.swift in Sources */,
 				0A1EA8EE239BFF500022F421 /* URL+Extension.swift in Sources */,
@@ -542,6 +555,7 @@
 				0A8D9DDD239B9B47008153A8 /* PhotosDataSouceFactory.swift in Sources */,
 				0A8DB5D2239928BA00731361 /* CollectionPhotosRequest.swift in Sources */,
 				0A8DB5CA2399243100731361 /* SplashRequest.swift in Sources */,
+				0A8DB626239E71E600731361 /* NSError+Extension.swift in Sources */,
 				0A8D9DD5239B8CC4008153A8 /* SearchPhotoRequest.swift in Sources */,
 				0A1EA91A239CE1270022F421 /* SplashPhotoSearchViewController.swift in Sources */,
 				0A1EA916239CDE410022F421 /* UIFont+Theme.swift in Sources */,
@@ -557,6 +571,7 @@
 			files = (
 				0A1EA8F7239CAFAE0022F421 /* CheckMarkView.swift in Sources */,
 				0A8DB5DF23993B8D00731361 /* SplashUser.swift in Sources */,
+				0A8CBB8823A11F5500A1C929 /* SplashTabbarViewController.swift in Sources */,
 				0AD17CDD2397EFB700368E54 /* ImageCache.swift in Sources */,
 				0A1EA8E6239BF1F90022F421 /* GradientView.swift in Sources */,
 				0A1EA8EF239BFF500022F421 /* URL+Extension.swift in Sources */,
@@ -579,6 +594,7 @@
 				0A8D9DDE239B9B47008153A8 /* PhotosDataSouceFactory.swift in Sources */,
 				0A8DB5D3239928BA00731361 /* CollectionPhotosRequest.swift in Sources */,
 				0A8DB5CB2399243100731361 /* SplashRequest.swift in Sources */,
+				0A8DB627239E71E600731361 /* NSError+Extension.swift in Sources */,
 				0A8D9DD6239B8CC4008153A8 /* SearchPhotoRequest.swift in Sources */,
 				0A1EA91B239CE1270022F421 /* SplashPhotoSearchViewController.swift in Sources */,
 				0A1EA917239CDE410022F421 /* UIFont+Theme.swift in Sources */,

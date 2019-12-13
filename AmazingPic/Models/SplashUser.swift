@@ -91,7 +91,7 @@ public struct SplashUser: Codable {
 
 // MARK: - Convenience
 extension SplashUser {
-    var displayName: String {
+   public var displayName: String {
         if let name = name {
             return name
         }
@@ -106,7 +106,7 @@ extension SplashUser {
         return username
     }
 
-    var profileURL: URL? {
+   public var profileURL: URL? {
         return URL(string: "https://unsplash.com/@\(username)")
     }
 }

@@ -42,6 +42,7 @@ class SplashPhotoSearchViewController: UIViewController {
         collectionView.register(PagingView.classForCoder(), forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: PagingView.reuseIdentifier)
         collectionView.contentInsetAdjustmentBehavior = .automatic
         collectionView.backgroundColor = UIColor.theme.backgroundColor
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
         return collectionView
     }()
     
@@ -57,7 +58,7 @@ class SplashPhotoSearchViewController: UIViewController {
         return emptyView
     }()
     
-    var dataSource:PageDataSource {
+    var dataSource:PageDataSource =  PhotosDataSouceFactory.collection(identifier: Configuration.shared.editorialCollectionId).dataSource {
         didSet{
             oldValue.cancelFetch()
             dataSource.delegate = self
@@ -71,33 +72,16 @@ class SplashPhotoSearchViewController: UIViewController {
     
     private var searchString: String = ""
     
-    //MARK: init
-    init() {
-        self.dataSource = editorialDataSource
-        super.init(nibName: nil, bundle: nil)
-        self.dataSource.delegate = self
-    }
-    
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
-    }
-    
-    
-    
-    //MARK: - 交互方法
-    @objc func cancelBarButtonDidClicked(sender: UIBarButtonItem)  {
-        
-    }
-    @objc func doneBarButtonDidClicked(sender: UIBarButtonItem)  {
-        
-    }
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        configNavigationBar()
+        self.view.backgroundColor = UIColor.white
+        self.dataSource = editorialDataSource
+        self.dataSource.delegate = self
+//        configNavigationBar()
         configSearchBar()
         configSubviews()
+        
     }
     func configNavigationBar()  {
         self.navigationItem.leftBarButtonItem = cancelBarButtonItem
@@ -152,14 +136,64 @@ class SplashPhotoSearchViewController: UIViewController {
     }
     
     func updateTitle() {
-        self.title = String(format: NSLocalizedString("title", comment: ""), numberOfSelectedPhoto)
+//        self.title = String(format: NSLocalizedString("title", comment: ""), numberOfSelectedPhoto)
+    }
+    
+    func setSearchText(_ text: String?)  {
+        if let text = text, text.isEmpty == false {
+            dataSource = PhotosDataSouceFactory.search(query: text).dataSource
+            searchString = text
+        } else {
+            dataSource = editorialDataSource
+            searchString = ""
+        }
+    }
+}
+//MARK: 交互
+extension SplashPhotoSearchViewController {
+    //MARK: - 交互方法
+    @objc func cancelBarButtonDidClicked(sender: UIBarButtonItem)  {
+        
+    }
+    @objc func doneBarButtonDidClicked(sender: UIBarButtonItem)  {
+        
+    }
+    
+    @objc func refresh() {
+        guard dataSource.items.isEmpty else {
+            return
+        }
+        if dataSource.isFetching == false && dataSource.items.isEmpty {
+            dataSource.reset()
+            reloadData()
+            fectchNextItems()
+        }
+    }
+    func reloadData()  {
+        collectionView.reloadData()
+    }
+    func fectchNextItems()  {
+        dataSource.fetchNextPage()
     }
     
 }
-
 //MARK: - 搜索代理
 extension SplashPhotoSearchViewController: UISearchBarDelegate{
-    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        guard let text = searchBar.text else { return  }
+        setSearchText(text)
+        refresh()
+        hiddenEmptyView()
+        updateTitle()
+        
+    }
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        guard searchText.isEmpty  else { return  }
+        setSearchText(nil)
+        refresh()
+        hiddenEmptyView()
+        updateTitle()
+    }
 }
 
 extension SplashPhotoSearchViewController: UISearchControllerDelegate{
@@ -168,15 +202,42 @@ extension SplashPhotoSearchViewController: UISearchControllerDelegate{
 
 extension SplashPhotoSearchViewController: PageDataSourceDelegate{
     func dataSourceWillStartFetching(_ dataSource: PageDataSource) {
-        
+        if dataSource.items.isEmpty {
+            spinner.startAnimating()
+        }
     }
     
     func dataSource(_ dataSource: PageDataSource, didFetch items: [SplashPhoto]) {
-        <#code#>
+        spinner.stopAnimating()
+        guard  !dataSource.items.isEmpty else { 
+            self.updateEmptyViewStatus(with: .noResults)
+            return 
+        }
+        
+        let newItemsCount = items.count
+        let startIndex = self.dataSource.items.count - newItemsCount
+        let endIndex = startIndex + newItemsCount
+        var indexPaths = [IndexPath]()
+        for index in startIndex ..< endIndex {
+            indexPaths.append(IndexPath(item: index, section: 0))
+        }
+        
+        self.hiddenEmptyView()
+        let hasWindow = self.collectionView.window != nil 
+        let collectionItemCount = self.collectionView.numberOfItems(inSection: 0)
+        if hasWindow &&  collectionItemCount < dataSource.items.count , collectionItemCount > 0{
+            self.collectionView.insertItems(at: indexPaths)
+        }else {
+            self.reloadData()
+        }
+        
     }
     
     func dataSource(_ dataSource: PageDataSource, didFailWithError error: Error) {
-        <#code#>
+        spinner.stopAnimating()
+        let state: EmptyViewState = (error as NSError).isNoInternetConnectionError() ? .noInternetConnection : .serverError
+        updateEmptyViewStatus(with: state)
+
     }
     
     

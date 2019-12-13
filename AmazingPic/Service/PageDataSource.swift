@@ -65,7 +65,9 @@ class PageDataSource {
         if canFetchMore  == false{
             fetchDidComplete(withItems: [], error: nil)
         }
-        delegate?.dataSourceWillStartFetching(self)
+        DispatchQueue.main.async {
+            self.delegate?.dataSourceWillStartFetching(self)
+        }
         isFetching = true
         let request = factory.request(with: cursor)
         request.completionBlock = {
@@ -101,12 +103,15 @@ class PageDataSource {
     }
     // MARK: - Private
     private func fetchDidComplete(withItems items: [SplashPhoto]?, error: Error?) {
-        self.error = error
-        if let error = error {
-            self.delegate?.dataSource( self, didFailWithError: error)
-        }else {
-            let items = items ?? []
-            self.delegate?.dataSource(self, didFetch: items)
+        DispatchQueue.main.async {
+            self.error = error
+            if let error = error {
+                self.delegate?.dataSource( self, didFailWithError: error)
+            }else {
+                let items = items ?? []
+                self.delegate?.dataSource(self, didFetch: items)
+            }
         }
+   
     }
 }

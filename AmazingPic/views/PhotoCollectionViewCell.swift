@@ -13,6 +13,7 @@ class PhotoCollectionViewCell: UICollectionViewCell {
     
     lazy var photoView: PhotoItemView = {
         let photoView = PhotoItemView()
+        photoView.translatesAutoresizingMaskIntoConstraints = false
         return photoView
     }()
     lazy var checkMarkView = CheckMarkView()
@@ -53,6 +54,9 @@ class PhotoCollectionViewCell: UICollectionViewCell {
         checkMarkView.alpha = isSelected ? 1 : 0
     }
 
+    func configure(with photo: SplashPhoto)  {
+        photoView.configuare(with: photo)
+    }
     override func prepareForReuse() {
         super.prepareForReuse()
         photoView.prepareForReuse()
